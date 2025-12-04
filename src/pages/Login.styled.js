@@ -5,7 +5,7 @@ export const PageWrapper = styled.div`
   width: 100%;
   height: 120vh;
   margin : 0 auto;
-  background-color: #ece8e1ff; /* 베이지 */
+  background-color: #faf8f5ff; /* 베이지 */
   display: flex;
   justify-content: center;
   align-items: center;

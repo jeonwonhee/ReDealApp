@@ -21,6 +21,7 @@ const ProductList = ({ products }) => {
   }
 
   return (
+    
     <ListWrapper>
       {products.map((p) => (
         <ProductItem key={p.id} product={p} />
@@ -30,3 +31,5 @@ const ProductList = ({ products }) => {
 };
 
 export default ProductList;
+
+

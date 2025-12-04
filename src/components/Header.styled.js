@@ -12,10 +12,29 @@ export const HeaderContainer = styled.header`
 `;
 
 export const HeaderInner = styled.div`
-  display: flex;
-  justify-content: space-between;
+  max-width: 1200px;         
   width: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+
+  display: flex;
+  justify-content: space-between;  
   align-items: center;
+`;
+
+export const AuthButton = styled.button`
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: none;
+  background-color: #00c471;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #00a860;
+  }
 `;
 
 export const Logo = styled(Link)`
@@ -33,9 +52,12 @@ export const Menu = styled.nav`
 
 export const NavLink = styled(Link)`
   font-size: 15px;
+    display: flex;
+      align-items: center;
   font-weight: 500;
   color: #444;
   text-decoration: none;
+
 
   &:hover {
     color: #00c471;
