@@ -3,102 +3,109 @@ import styled from "styled-components";
 
 export const DetailWrapper = styled.div`
   max-width: 960px;
-  margin: 40px auto 80px;
-  padding: 0 40px;
+  margin: 40px auto 60px;
+  padding: 0 24px;
 `;
 
-export const TopSection = styled.div`
+export const DetailInner = styled.div`
   display: flex;
   gap: 32px;
-  align-items: flex-start;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
 
   @media (max-width: 768px) {
     flex-direction: column;
   }
 `;
 
-export const ImageBox = styled.div`
-  width: 360px;
-  height: 280px;
-  border-radius: 14px;
-  overflow: hidden;
-  background-color: #f5f5f5;
-  flex-shrink: 0;
+export const ImageArea = styled.div`
+  flex: 1;
+  min-width: 280px;
+  max-width: 360px;
+`;
+
+export const MainImage = styled.img`
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #eee;
+`;
+
+export const NoImage = styled.div`
+  width: 100%;
+  height: 320px;
+  border-radius: 10px;
+  border: 1px dashed #ccc;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+  color: #999;
+  font-size: 14px;
+  background-color: #fafafa;
 `;
 
-export const InfoBox = styled.div`
-  flex: 1;
+export const InfoArea = styled.div`
+  flex: 1.3;
+  display: flex;
+  flex-direction: column;
 `;
 
-export const Title = styled.h2`
-  font-size: 24px;
+export const Title = styled.h1`
+  font-size: 22px;
   font-weight: 700;
-  margin: 0 0 8px 0;
+  margin-bottom: 8px;
+  color: #222;
 `;
 
 export const Price = styled.div`
-  font-size: 22px;
-  font-weight: 800;
-  color: #222;
-  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #00c471;
+  margin-bottom: 8px;
 `;
 
-export const MetaRow = styled.div`
+export const Meta = styled.div`
   font-size: 14px;
-  color: #777;
-  margin-bottom: 14px;
+  color: #666;
+  margin-top: 2px;
 `;
 
+/* ✅ 작은 카드(뱃지)들 */
 export const TagRow = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: 8px;
+  margin-top: 10px;
 `;
 
 export const Tag = styled.span`
   padding: 6px 10px;
   border-radius: 999px;
-  background-color: #f3f3ff;
-  color: #5b3cc4;
   font-size: 12px;
-  font-weight: 600;
+  border: 1px solid #eee;
+  background-color: #f8f9fa;
+  color: #555;
 `;
 
-export const ButtonRow = styled.div`
-  margin-top: 32px;
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px;
+export const Divider = styled.hr`
+  margin: 16px 0;
+  border: none;
+  border-top: 1px solid #eee;
 `;
 
 export const BackButton = styled.button`
-  padding: 10px 20px;
-  border-radius: 8px;
-  border: none;
-  background-color: #00c471;
-  color: #fff;
+  margin-top: 24px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid #ddd;
+  background-color: #fff;
   font-size: 14px;
-  font-weight: 600;
   cursor: pointer;
 
   &:hover {
-    background-color: #00a860;
+    background-color: #f7f7f7;
   }
-`;
-
-export const EmptyText = styled.p`
-  margin-top: 40px;
-  text-align: center;
-  color: #888;
-  font-size: 15px;
 `;

@@ -172,6 +172,21 @@ export const CheckboxRow = styled.div`
   }
 `;
 
+export const DescriptionInput = styled.textarea`
+  width: 100%;
+  min-height: 100px;
+  margin-top: 8px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  resize: vertical;
+
+  &:focus {
+    outline: none;
+    border-color: #00c471;
+  }
+`;
 /* ==== 라디오 ==== */
 
 export const RadioRow = styled.div`
